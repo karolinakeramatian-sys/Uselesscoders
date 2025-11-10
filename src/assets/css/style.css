@@ -656,8 +656,65 @@ body {
 }
 
 /*------FOOTER-----*/
-#footer {
+
+footer {
+  background-color: #ffffff;
   width: 100%;
+  padding: 40px 20px;
+
+  .footer-container {
+    display: flex;
+    flex-wrap: wrap; /* allows stacking on small screens */
+    justify-content: space-between;
+    max-width: 1200px;
+    gap: 20px;
+
+    .footer-section {
+      flex: 1 1 200px; /* flexible width */
+      min-width: 200px;
+
+      h4 {
+        margin-bottom: 10px;
+        font-size: 18px;
+        color: #333;
+      }
+
+      p {
+        margin: 5px 0;
+        color: #555;
+        font-size: 14px;
+      }
+    }
+
+    /* Special styling for the copyright section */
+    .footer-section.copyright {
+      flex: 1 1 100%; /* take full width on small screens */
+      display: flex;
+      align-items: center;
+      justify-content: flex-end; /* right-aligned on large screens */
+      h4 {
+        margin: 0; /* remove extra spacing */
+        font-size: 16px;
+        color: #333;
+      }
+    }
+  }
+
+  /* Responsive adjustments for smaller screens */
+  @media (max-width: 768px) {
+    .footer-container {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    .footer-section {
+      margin-bottom: 20px;
+    }
+
+    .footer-section.copyright {
+      justify-content: flex-start; /* left-align on small screens */
+    }
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
