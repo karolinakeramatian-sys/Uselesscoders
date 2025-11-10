@@ -73,7 +73,7 @@ Version: 1.0
   right: 8px;
   opacity: 1;
 }
-
+/* ----- ALL STUFF WE DID ----- */
 /* Hero image*/
 
 .hero {
@@ -122,15 +122,30 @@ Version: 1.0
 }
 .image-row p {
   margin: 0;
-  margin-top: 10;
+}
+.image-row-padding {
+  padding-bottom: 10;
 }
 /* meet the team class */
 .meet-the-team {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  gap: 35px;
+  gap: 30px;
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
+.hero-info {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.our-story {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+/* ----- END OF ALL STUFF WE DID ----- */
 
 /*Mixin SASS file*/
 /*! TYPOGRAPHY  */
