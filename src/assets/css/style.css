@@ -667,7 +667,7 @@ footer {
     flex-wrap: wrap; /* allows stacking on small screens */
     justify-content: space-between;
     max-width: 1200px;
-    gap: 20px;
+    gap: 32px;
 
     .footer-section {
       flex: 1 1 200px; /* flexible width */
@@ -675,27 +675,31 @@ footer {
 
       h4 {
         margin-bottom: 10px;
-        font-size: 18px;
-        color: #333;
+        font-size: 19px;
+        color: #000000;
+        font-weight: 700;
       }
 
       p {
         margin: 5px 0;
-        color: #555;
+        color: #000000;
         font-size: 14px;
+        font-weight: 400;
       }
     }
 
     /* Special styling for the copyright section */
     .footer-section.copyright {
-      flex: 1 1 100%; /* take full width on small screens */
+      flex: 0 0 auto; /* take full width on small screens */
       display: flex;
-      align-items: center;
       justify-content: flex-end; /* right-aligned on large screens */
+      margin-right: 100px;
+
       h4 {
         margin: 0; /* remove extra spacing */
-        font-size: 16px;
-        color: #333;
+        font-size: 14px;
+        font-weight: 300;
+        color: #000000;
       }
     }
   }
@@ -705,6 +709,7 @@ footer {
     .footer-container {
       flex-direction: column;
       align-items: flex-start;
+      flex-wrap: wrap;
     }
 
     .footer-section {
@@ -713,6 +718,8 @@ footer {
 
     .footer-section.copyright {
       justify-content: flex-start; /* left-align on small screens */
+      flex: 1 1 100%;
+      margin-right: 0;
     }
   }
 }
