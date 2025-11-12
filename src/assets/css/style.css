@@ -166,7 +166,6 @@ footer {
     display: flex;
     flex-wrap: wrap; /* allows stacking on small screens */
     justify-content: space-between;
-    max-width: 1200px;
     gap: 32px;
 
     .footer-section {
@@ -193,10 +192,11 @@ footer {
       flex: 0 0 auto; /* take full width on small screens */
       display: flex;
       justify-content: flex-end; /* right-aligned on large screens */
-      margin-right: 100px;
+      margin-right: 20px;
 
       h4 {
         margin: 0; /* remove extra spacing */
+        padding-left: 100px;
         font-size: 14px;
         font-weight: 300;
         color: #000000;
